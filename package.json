@@ -4,6 +4,7 @@
   "description": "A newsletter signup landing page with Mailchimp API integration. Built with HTML, CSS, JavaScript, Node.js and Express.js",
   "main": "app.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
