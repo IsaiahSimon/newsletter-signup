@@ -41,7 +41,7 @@ app.post("/", function (req, res) {
   // Variables for https.request
 
   //const url = "https://<dc>.api.mailchimp.com/3.0/"     // root url for the API, note: must replace <dc> with datacenter in api key
-  const url = `https://${process.env.REGION}.api.mailchimp.com/3.0/lists/${process.env.LIST_ID}`     // my lists and datacenter
+  const url = `https://us13.api.mailchimp.com/3.0/lists/${process.env.LIST_ID}`     // my lists and datacenter
 
   const options = {       // https options
     method: "POST",
