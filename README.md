@@ -3,7 +3,7 @@ A newsletter signup app deployed on Heroku with Mailchimp API integration.
 
 **Link to project:** https://isimondev-newsletter.herokuapp.com/
 
-![newsletter-gif](https://github.com/IsaiahSimon/newsletter-signup/blob/main/public/images/gif-isimondev-newsletter.gif)
+![newsletter-gif](./public/images/gif-isimondev-newsletter.gif)
 
 ## How It's Made:
 ### Client:
