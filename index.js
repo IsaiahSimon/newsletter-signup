@@ -3,7 +3,6 @@ const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
 const https = require("https");
-const { response } = require("express");
 const PORT = process.env.PORT || 5000
 
 const app = express();
