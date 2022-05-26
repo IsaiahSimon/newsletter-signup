@@ -4,6 +4,7 @@ const request = require("request");
 const bodyParser = require("body-parser");
 const https = require("https");
 const { response } = require("express");
+const PORT = process.env.PORT || 5000
 
 const app = express();
 
@@ -82,6 +83,6 @@ app.post("/success", function(req, res) {
 });
 
 // prepare port for Heroku deployment
-app.listen(process.env.PORT || 8080, function() {
+app.listen(PORT, function() {
   console.log("Server is running on port 3000.")
 });
