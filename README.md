@@ -7,14 +7,14 @@ A newsletter signup app deployed on Heroku with Mailchimp API integration.
 
 ## How It's Made:
 ### Client:
-**Tech used:** HTML, CSS, JavaScript, Bootstrap
+**Tech used:** HTML/CSS/JavaScript, Bootstrap
 
 The Express server first delivers the html signup page to the client. The page is styled with Bootstrap styles pulled from their CDN alongside some custom styles.
 
 After the user fills out the necessary info in the form, the submit button posts to the Express server's home route. The user is then redirected towards a success or failure page depending on the outcome of the API post request made to Mailchimp's API. They are also given the option to "Continue" back to homepage upon sucessful submission, or "Try Again" if something went wrong.
 
 ### Server:
-**Tech used:** Express, Heroku
+**Tech used:** Node.js, Express.js, Heroku
 
 *Why was this stack chosen?*
 
