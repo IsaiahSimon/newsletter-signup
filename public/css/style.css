@@ -17,7 +17,7 @@ a {
   color: #fefefe;
 }
 
-h1{
+h1 {
   font-size: 1.6rem;
 }
 
@@ -34,7 +34,8 @@ h1{
 }
 
 .btn-primary:hover {
-  background-color: #2ee4bb;;
+  background-color: #2ee4bb;
+  ;
   border-color: #35c0a2;
 }
 
@@ -115,6 +116,8 @@ h1{
   -webkit-overflow-scrolling: touch;
 }
 
-.form-control.top::placeholder, .form-control.middle::placeholder, .form-control.bottom::placeholder {
+.form-control.top::placeholder,
+.form-control.middle::placeholder,
+.form-control.bottom::placeholder {
   color: #929292cd;
 }
