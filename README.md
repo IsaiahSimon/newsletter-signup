@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/IsaiahSimon">
-    <img src="https://github.com/IsaiahSimon/IsaiahSimon/blob/main/images/logo_500x500_dark.png" alt="Logo" width="80" height="80">
+    <img src="./public/images/gif-isimondev-newsletter.gif" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Newsletter Sign Up</h3>
