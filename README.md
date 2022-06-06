@@ -44,6 +44,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#lessons-learned">Lessons Learned</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -84,6 +85,43 @@ Users can fill out the sign up form with the required information and the Expres
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- LESSONS LEARNED -->
+## Lessons Learned
+<details>
+<summary>
+Learned a **LOT** from building this project, but I would say my biggest takeaway was figuring out why the app worked perfectly on my local and heroku's local environment, yet crashed spectacularly when deployed...
+</summary>
+
+I discovered that the Mailchimp url wasn't being built properly during deployment due to being "blind" to the environment variables I used.
+
+The local versions saw these env variables perfectly fine, but for some reason heroku couldn't. After coming over the Heroku docs again, I learned about setting "config vars" ...and viola! The app now built the url correctly, got authenticated by Mailchimp and sucessfully completed the post request. This was a big moment for me, an one I shall not soon forget!
+
+
+**Express.js:**
+- creating different post routes (home, success, failure)
+- using body-parser middleware for parsing incoming request bodies
+- HTTPS Node.js module
+- dotenv module and process.env
+- packaging and stringify JSON data to be sent to Mailchimp
+
+**Mailchimp API:**
+- configure root url for making POST requests to an audience list.
+
+**Git**
+- push to multiple remotes at the same time (GitHub and Heroku)
+
+**Heroku:**
+- prepare app for deployment on Heroku's servers
+- Heroku CLI
+- pushing commits to Heroku's git repo
+- scaling the app with Heroku dynos
+- Heroku logs
+- Procfile
+- declaring app denendencies via package.json
+- running app locally via Heroku local
+- define Config Vars to externalize keys or external resource addresses
+</details>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 ### Installation
@@ -120,39 +158,6 @@ Set up the project locally or use the [demo](https://isimondev-newsletter.heroku
 See the [open issues](https://github.com/IsaiahSimon/newsletter-signup/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LESSONS LEARNED -->
-## Lessons Learned
-
-Learned a **LOT** from building this project, but I would say my biggest takeaway was figuring out why the app worked perfectly on my local and heroku's local environment, yet crashed spectacularly when deployed. After struggling for a few hours testing a few things, I took a good night's rest.
-
-With fresh eyes on those error messages I decided the issue lied somewhere with the Heroku deployment. I discovered that it wasn't building the Mailchimp url properly during deployment due to being "blind" to the environment variables I used.
-
-The local versions saw these env variables perfectly fine, but for some reason heroku couldn't. After coming over the Heroku docs again, I learned about setting "config vars" ...and viola! The app now built the url correctly, got authenticated by Mailchimp and sucessfully completed the post request. This was a big moment for me, an one I shall not soon forget!
-
-Express.js:
-- creating different post routes (home, success, failure)
-- using body-parser middleware for parsing incoming request bodies
-- HTTPS Node.js module
-- dotenv module and process.env
-- packaging and stringify JSON data to be sent to Mailchimp
-
-Mailchimp API:
-- configure root url for making POST requests to an audience list.
-
-Git
-- push to multiple remotes at the same time (GitHub and Heroku)
-
-Heroku:
-- prepare app for deployment on Heroku's servers
-- Heroku CLI
-- pushing commits to Heroku's git repo
-- scaling the app with Heroku dynos
-- Heroku logs
-- Procfile
-- declaring app denendencies via package.json
-- running app locally via Heroku local
-- define Config Vars to externalize keys or external resource addresses
 
 <!-- CONTRIBUTING -->
 ## Contributing
