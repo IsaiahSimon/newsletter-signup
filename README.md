@@ -153,6 +153,7 @@ Set up the project locally or use the [demo](https://isimondev-newsletter.heroku
 
 - [x] Integrate with Mailchimp API
 - [x] Deploy on Heroku
+- [ ] Add user Authentication & Security
 
 
 See the [open issues](https://github.com/IsaiahSimon/newsletter-signup/issues) for a full list of proposed features (and known issues).
